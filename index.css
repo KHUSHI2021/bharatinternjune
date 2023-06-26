@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap'); 
+body
+{   
+
+    padding: 0;
+    margin: 0;
+    background-color: rgb(212, 195, 139);
+    background-image: url(https://media.istockphoto.com/id/1419844586/vector/stem-blue-horizontal-frame-vector-education-bright-illustration.jpg?s=612x612&w=0&k=20&c=-A1eYLYulujNsiM26lkVy7qMT_Hp82N5EtKHSFRmigk=);
+    background-repeat: cover;
+    
+}
+h1{
+    margin: 60px 0px;
+    font-size: 50px;
+    font-weight: 50;
+    text-decoration-line: underline;
+    text-align: center;
+    -webkit-text-fill-color: #dcdbe1;
+    text-shadow: 2px 1px 5px rgb(255, 255, 255);
+    transform-origin: center;
+}
+
+.calculator {
+    margin: 150px;
+    padding: 10px;
+    border-radius: 1em;
+    height: 400px;
+    width: 450px; 
+    background-color: #9fa5cc;
+    box-shadow: rgba(0, 0, 0, 0.19) 5px 10px 20px, rgba(0, 0, 0, 0.23) 5px 6px 6px; 
+    position: relative;    
+    top: -30px;    
+    left: 21%;
+}
+
+
+.display-box {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #dcdbe1;
+    background-position-x: 500px;
+    border: #072138, 0.5px;
+    color: #072138;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+#btn {
+    background-color: #659e9e;
+}
+#arthmetic{
+    font-size: large;
+    background-color: rgb(61, 66, 136);
+    border-radius: 100px;
+}
+#equal{
+    background-color: cadetblue;
+}
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    font-size: large;
+    background-color: #a88e8e;
+    color: rgb(0, 0, 0);
+    border: solid #072138 4px;
+    width: 90%;
+    border-radius: 10px;
+    height: 75%; 
+}
+
+input:active[type=button] 
+{
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 2px 2px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 2px 2px 5px #c1c1c1;
+}
