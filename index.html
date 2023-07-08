@@ -1,55 +1,204 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
- 
-<head>
-  <meta charset="utf-8">
-  <title> Calculator using HTML, CSS and JavaScript</title>
-  <link rel="stylesheet" href="calculator.css">
-</head>
- 
-<body>
-<table class="calculator" >
-  <h1 id= "heading" >
-    SIMPLE CALCULATOR 
-  </h1>
-  <tr>
-    <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
- 
-    <!-- clearScreen() function clears all the values -->
-    <td> <input type="button" value="Clear" onclick="clearScreen()" id="btn" /> </td>
-  </tr>
-  <tr>
-    <!-- display() function displays the value of clicked button -->
-    <td> <input type="button" value="1" onclick="display('1')" /> </td>
-    <td> <input type="button" value="2" onclick="display('2')" /> </td>
-    <td> <input type="button" value="3" onclick="display('3')" /> </td>
-    <td> <input type="button" value="/" onclick="display('/')" id="arthmetic" /> </td>
-  </tr>
-  <tr>
-    <td> <input type="button" value="4" onclick="display('4')" /> </td>
-    <td> <input type="button" value="5" onclick="display('5')" /> </td>
-    <td> <input type="button" value="6" onclick="display('6')" /> </td>
-    <td> <input type="button" value="-" onclick="display('-')" id="arthmetic"/> </td>
-  </tr>
-  <tr>
-    <td> <input type="button" value="7" onclick="display('7')" /> </td>
-    <td> <input type="button" value="8" onclick="display('8')" /> </td>
-    <td> <input type="button" value="9" onclick="display('9')" /> </td>
-    <td> <input type="button" value="+" onclick="display('+')"id="arthmetic" /> </td>
-  </tr>
-  <tr>
-    <td> <input type="button" value="." onclick="display('.')" /> </td>
-    <td> <input type="button" value="0" onclick="display('0')" /> </td>
- 
-    <!-- calculate() function evaluates the mathematical expression -->
-    <td> <input type="button" value="=" onclick="calculate()" id="equal" /> </td>
-    <td> <input type="button" value="*" onclick="display('*')" id="arthmetic"/> </td>
-  </tr>
+<html lang="en">
 
-</table>
- 
-<script type="text/javascript" src="calculator.js"></script>
- 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="netflix.css">
+    <!--for add icon-->
+    <title>Netflix</title>
+
+</head>
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src=" https://pngimg.com/d/netflix_PNG26.png" 
+                alt="Netflix" />
+            <a href="#" class="botton botton-round"> Sign In</a>
+        </div>
+        <div class="showcase-content">
+            <h1>Unlimited anime shows</h1>
+            <p>Watch and Cancel an anywhere and an anytime</p>
+            <a href="#" class="botton botton-xl">
+                Watch free for 15 Days
+                <i class='fas fa-chevron-right btn-icon'></i>
+            </a>
+        </div>
+    </header>
+    <section class="tabs">
+        <div class="container">
+            <div id= "tab-1"class="tab-item tab-border">  
+             <p class="hide-sm">Cancel Anytime</p>
+        </div>
+            <div id= 'tab-2'class="tab-item">
+             <p class="hide-sm">watch at any device</p>
+            </div>
+            <div id= 'tab-3'class="tab-item">
+             <p class="hide-sm">pick your price</p>
+        </div>
+    </div>
+    </section>
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab Content 1 -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
+                        <p class="text-lg">
+                            If you decide Netflix isn't for you - no problem. No commitment.
+                            Cancel online anytime.
+                        </p>
+                        <a href="#" class="botton botton-lg">Watch Free For 15 Days</a>
+                    </div>
+                    <img src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="" />
+                </div>
+            </div>
+
+            <!-- Tab Content 2 -->
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-2-content-top">
+                    <p class="text-lg">
+                        Watch anime shows at anytime and anywhere — personalized for
+                        you.
+                    </p>
+                    <a href="#" class="botton botton-lg">Watch Free For 15 Days</a>
+                </div>
+                <div class="tab-2-content-bottom">
+                    <div>
+                        <img src="https://i.ibb.co/y4jwRnx/42f017c1-5de3-46af-9250-b1b8246dd3a6-fotor-bg-remover-20230624115756.png" >
+                        <p class="text-md"> 
+                            Watch on your TV
+                        </p>
+                        <p class="text-dark">
+                            Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+                            players and more.
+                        </p>
+                    </div>
+                    <div>
+                            <img src="https://www.whats-on-netflix.com/wp-content/uploads/2023/03/anime-coming-to-netflix-in-2023-and-beyond.png" >
+                            <p class="text-md">
+                            Watch instantly or download for later
+                        </p>
+                        <p class="text-dark">
+                             Watch on Netflix.com.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://i.ibb.co/56z2DY5/Featured-Watch-Cartoons-And-Anime-Online-696x398-fotor-bg-remover-20230624121647.png" alt="Featured-Watch-Cartoons-And-Anime-Online-696x398-fotor-bg-remover-20230624121647" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>
+                        <p class="text-md">
+                            Use any device.
+                        </p>
+                        <p class="text-dark">
+                            Available on phone tablet and any computer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content 3 -->
+            <div id="tab-3-content" class="tab-content-item">
+                <div class="text-center">
+                    <p class="text-lg">
+                        Choose one plan and watch any anime on Netflix.
+                    </p>
+                    <a href="#" class="botton botton-lg">Watch Free For 15 Days</a>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Basic</th>
+                            <th>Standard</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monthly price after free month ends on 6/24/23</td>
+                            <td>999-/Rs</td>
+                            <td>1599-/Rs</td>
+                            <td>2499-/Rs</td>
+                        </tr>
+                        <tr>
+                            <td>HD Available</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Ultra HD Available</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Screens you can watch on at the same time</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Watch on your laptop, TV, phone and tablet</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Unlimited movies and TV shows</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Cancel anytime</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>First month free</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Questions? Call 9877525973</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Ways To Watch</a></li>
+                <li><a href="#">Netflix Originals</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Buy Gift Cards</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+            
+            </ul>
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="netflix.js"></script>
+
 </body>
- 
+
 </html>
